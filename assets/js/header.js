@@ -1,62 +1,74 @@
 function renderHeader() {
   const header = document.createElement("header");
   header.innerHTML = `
-         <nav class="navbar">
-            <div class="navbar-button">
-                <a href="/"><img src="../img/keyboard_double_arrow_left_FILL0_wght400_GRAD0_opsz24.svg" class="button0"
-                        alt="button-back"></a>
-                <h1 class="button-text">Back</h1>
+        <nav class="navbar">
+            <div class="navbar-miss-left">
+                <div class="point-nav">
+                    <ul>
+                        <li class="itens-navbar">
+                            <ion-icon name="time-outline"></ion-icon>2/2
+                        </li>
+                        <li class="itens-navbar">
+                            <ion-icon name="close-circle-outline"></ion-icon>3/3
+                        </li>
+                    </ul>
+                </div>
             </div>
+            
             <div class="nav-links">
                 <ul class="background-nav">
-                    <li><a href="/"><img src="../img/Vhome.webp" class="img-bar" alt="home"></a></li>
-                    <li><a href="/assets/html/battlepass.html"><img src="../img/Vpass.webp" class="img-bar"
-                                alt="battlepass"></a>
+                    <li><a href="/">HOME</a></li>
+                    <li>
+                        <a href="/assets/html/battlepass.html">BATTLEPASS</a>
+                        <div class="progress-container">
+                            <div class="progress-navbar">
+                                <div class="bar-navbar"></div>
+                            </div>
+                        </div>
                     </li>
-                    <li><a href="/assets/html/agents.html"><img src="../img/Vagents.webp" class="img-bar"
-                                alt="agents"></a>
+                    <li>
+                        <a href="/assets/html/agents.html">AGENTS</a>
+                        <div class="progress-container">
+                            <div class="progress-navbar">
+                                <div class="bar-navbar"></div>
+                            </div>
+                        </div>
                     </li>
-                    <div class="play-navbar">
-                        <li><a href="../html/play.html">
-                                <h1 class="text-play">PLAY</h1>
-                            </a></li>
-                    </div>
-                    <li><a href="/assets/html/career.html"><img src="../img/Vcareer.webp" class="img-bar"
-                                alt="career"></a>
+                    <li class="play-navbar">
+                        <a href="../html/play.html">
+                            <h1 class="text-play">PLAY</h1>
+                        </a>
                     </li>
-                    <li><a href="/assets/html/collection.html"><img src="../img/Vcoll.webp" class="img-bar"
-                                alt="collection"></a>
-                    </li>
-                    <li><a href="/assets/html/store.html"><img src="../img/Vshop.webp" class="img-bar" alt="store"></a>
-                    </li>
+                    <li><a href="/assets/html/career.html">CAREER</a></li>
+                    <li><a href="/assets/html/collection.html">COLLECTION</a></li>
+                    <li><a href="/assets/html/store.html">STORE</a></li>
                 </ul>
             </div>
-            <div class="user-profile">
-                <div class="navbar-miss">
-                    <ul class="nav-bar-vlrt">
-                        <li class="itens-navbar"><ion-icon name="time-outline"></ion-icon>2/2</li>
-                        <li class="itens-navbar"><ion-icon name="close-circle-outline"></ion-icon>3/3</li>
-                        <div class="point-nav">
-                            <li class="itens-navbar"><img src="../img/Radianite_Points.webp" class="icons-vp-rp"
-                                    alt="RP">1.550
-                            </li>
-                            <li class="itens-navbar"><img src="../img/Valorant_Points.webp" class="icons-vp-rp"
-                                    alt="VP">9.999
-                            </li>
-                            <li class="settings-nav"><ion-icon name="settings-sharp" class="settings"></ion-icon></li>
-                        </div>
+            
+            <div class="navbar-miss-right">
+                <div class="point-nav">
+                    <ul>
+                        <li class="itens-navbar">
+                            <img src="../img/Radianite_Points.webp" class="icons-vp-rp" alt="RP">1.550
+                        </li>
+                        <li class="itens-navbar">
+                            <img src="../img/Valorant_Points.webp" class="icons-vp-rp" alt="VP">9.999
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="navbar-profile">
             <ul class="nav-bar-vlrt-bar">
-                <li class="itens-bar"><img src="../img/RGX_Card_Large.webp" class="card-profile" alt="card1">
+                <li class="itens-bar">
+                    <img src="../img/RGX_Card_Large.webp" class="card-profile" alt="Player Card 1">
                 </li>
                 <li class="itens-bar people">1</li>
-                <li class="itens-bar"><img src="../img/RGX_Card_Large.webp" class="card-profile" alt="card1">
+                <li class="itens-bar">
+                    <img src="../img/RGX_Card_Large.webp" class="card-profile" alt="Player Card 2">
                 </li>
-                <li class="itens-bar"><img src="../img/RGX_Card_Large.webp" class="card-profile" alt="card1">
+                <li class="itens-bar">
+                    <img src="../img/RGX_Card_Large.webp" class="card-profile" alt="Player Card 3">
                 </li>
                 <li class="itens-bar people">0</li>
                 <li class="itens-bar people">30</li>
@@ -66,18 +78,35 @@ function renderHeader() {
   return header;
 }
 
-const app = document.getElementById("nav-header");
-app.appendChild(renderHeader());
+// Função para inicializar o header
+function initializeHeader() {
+  const app = document.getElementById("nav-header");
+  if (app) {
+    app.appendChild(renderHeader());
+  }
+}
 
+// Função para atualizar data e hora
 function updateDateTime() {
   const timeElement = document.getElementById("time");
+  if (!timeElement) return;
+
   const now = new Date();
   const hours = now.getHours().toString().padStart(2, "0");
   const minutes = now.getMinutes().toString().padStart(2, "0");
   const seconds = now.getSeconds().toString().padStart(2, "0");
   const timeString = `${hours}:${minutes}:${seconds}`;
+
   timeElement.textContent = timeString;
 }
 
-setInterval(updateDateTime, 1000);
-updateDateTime();
+// Inicialização
+document.addEventListener("DOMContentLoaded", function () {
+  initializeHeader();
+
+  // Atualizar relógio se existir elemento
+  if (document.getElementById("time")) {
+    updateDateTime(); // Atualização inicial
+    setInterval(updateDateTime, 1000); // Atualizar a cada segundo
+  }
+});
