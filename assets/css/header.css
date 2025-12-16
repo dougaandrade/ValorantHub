@@ -94,7 +94,6 @@ ion-icon {
 
 .background-nav > li > a:hover {
   color: #ffee00;
-  background: rgba(255, 255, 255, 0.1);
   transform: translateY(-1px);
 }
 

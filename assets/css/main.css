@@ -139,7 +139,7 @@ body {
   font-size: 0.8rem;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: #ffffffff;
+  color: rgb(90, 90, 90);
 }
 
 .time-mode {

@@ -76,9 +76,8 @@ function exibirPersonagens() {
       img_main.appendChild(imgSelecionada);
 
       // Cria e exibe o nome do agente selecionado
-      const NamePlayer = document.createElement("h1");
+      const NamePlayer = document.querySelector(".name-agents");
       NamePlayer.innerText = imagemAgents[index].player;
-      NamePlayer.className = "name-agents";
       img_main.appendChild(NamePlayer);
     });
   });

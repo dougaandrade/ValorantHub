@@ -87,7 +87,7 @@ main {
 
 .name-agents {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 7rem;
@@ -117,9 +117,8 @@ main {
 
 .agents-content {
   width: 100%;
-  /* padding: 20px; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
