@@ -31,206 +31,14 @@ main {
   height: 100%;
 }
 
-/* Navbar Principal */
-
-.navbar {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 600;
-  font-family: "Inter", sans-serif;
-}
-
-.nav-bar-vlrt {
-  width: 100%;
-  gap: 3px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  cursor: pointer;
-}
-
-.logo-content {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.text-content {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 0 10px;
-}
-
-.miss-nav {
-  display: flex;
-  padding: 0 0.9rem 0 0rem;
-}
-
-.point-nav {
-  display: flex;
-  padding: 0 1rem 0 2rem;
-}
-
-.settings-nav {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-}
-
-.vlr-icon {
-  width: 50px;
-  height: 50px;
-}
-
-.text-nav {
-  height: 50px;
-  font-size: 3.1rem;
-  font-weight: 100;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.text-nav-p {
-  padding: 2px 0 0 0;
-  height: 20px;
-  width: 140px;
-  font-size: 1.2rem;
-  font-weight: 300;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.text-play-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 3rem;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.itens-ion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.icon-nm {
-  width: 15px;
-}
-
-.icons-vp-rp {
-  width: 27px;
-  padding: 5px;
-}
-
-.icons-miss {
-  display: flex;
-  align-items: center;
-  width: 25px;
-  padding: 2px;
-}
-
-.itens-navbar {
-  display: flex;
-  align-items: center;
-}
-
-/* Fim Navbar */
-
-/* NavbarProfile */
-
-.navbar-profile {
-  position: absolute;
-  right: 0;
-  display: flex;
-  height: 100%;
-  flex-direction: row;
-  color: white;
-  cursor: pointer;
-}
-
-.nav-bar-vlrt-bar {
-  width: 100%;
-  height: 100%;
-  padding: 3px;
-  gap: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #303b46;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
-}
-
-.itens-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.card-profile {
-  width: 45px;
-}
-
-.people {
-  width: 45px;
-  height: 45px;
-  font-family: "Bebas Neue", sans-serif;
-  background-color: #303540;
-}
-
-/* Fim NavBarProfile */
-
-/* Menu Game */
-
-.menu-game {
-  display: flex;
-  padding: 40px 0 0 40px;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  float: left;
-}
-
-.itens-content {
-  display: flex;
-  font-size: 3.4rem;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 500;
-  color: white;
-}
-
-.itens-content:hover {
-  cursor: pointer;
-  transform: translate(10px, 0px);
-  transition-duration: 0.2s;
-  color: aqua;
-}
-
-.red {
-  color: rgb(255, 0, 0);
-  font-size: 6rem;
-}
-
-/* Fim Menu Game */
-
 /* Features */
 
 .features {
   display: flex;
   flex-direction: column;
-  padding: 42px 64px 0 0;
-  float: right;
+  padding: 42px 64px 0 10px;
+
+  float: left;
 }
 
 .itens-features {
@@ -335,7 +143,7 @@ main {
   justify-content: center;
   width: 18rem;
   height: 39px;
-  background: #2452448f;
+  background: #00000045;
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   color: #fff;
@@ -346,11 +154,11 @@ main {
   align-items: center;
   justify-content: center;
   height: 20px;
-  background: #7e8a8e;
+  background: #8b8b8b;
   font-size: 0.8rem;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: #ffffffff;
 }
 
 .time-mode {
