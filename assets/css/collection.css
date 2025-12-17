@@ -19,8 +19,8 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 3rem;
-  gap: 20px;
+  padding: 2rem;
+  gap: 30px;
 }
 
 /* Fim Collection */
@@ -45,7 +45,18 @@ body {
   width: 70%;
   aspect-ratio: 1/2;
   height: auto;
-}
+  clip-path: polygon(0% 0%, 50% 0%, 100% 0%, 100% 82.75%, 50% 98.5%, 0% 82.75%);
+  }
+
+  .img-player:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+.img-player:active {
+    transform: scale(0.95);
+    transition: all 0.1s ease;
+  }
 
 .text-player-h1 {
   display: flex;
@@ -64,18 +75,17 @@ body {
   gap: 5px;
 }
 
-.card-spray {
-  width: 13rem;
-  height: auto;
-  background-color: #09387018;
-}
 
-.content-spray {
+.content-side-spray {
+  max-width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
-
 .text-spray-h1 {
   max-width: 100%;
   display: flex;
@@ -121,56 +131,135 @@ body {
 }
 
 .side_arms {
-  display: flex;
+  display: contents;
+}
+
+.side_arms-melee {
+  position: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  left: 58%;
+  bottom: 18%;
 }
-
 .text-side-h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
-  font-weight: 200;
-  padding: 2px;
-  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #e0e0e0;
+  grid-column: span 1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-.card-side {
+.card-side,
+.card-spray{
   display: flex;
-  max-width: 100%;
-  width: 12rem;
-  background-color: #09387018;
+  align-items: center;
+  width: 100%;
+  height: 106px;
+  background-color: #4041438d;
+  border: 1px solid #4041438d;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.card-side:hover {
+  border-color: #5a9fe8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(90, 159, 232, 0.4);
+  background: linear-gradient(135deg, #1a2537 0%, #243d52 100%);
+}
+.card-spray:hover {
+  border-color: #5a9fe8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(90, 159, 232, 0.4);
+  background: linear-gradient(135deg, #1a2537 0%, #243d52 100%);
 }
 
 .content-side {
   max-width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
 }
 
 .text-side {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Inter", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 100;
-  width: 12rem;
-  padding: 2px;
-  color: #ffffff;
-  background-color: #0229592d;
+  font-size: 0.7rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 6px 8px 8px 8px;
+  color: #b5bcc7;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
 
 .img-side {
-  object-fit: scale-down;
-  width: 10rem;
-  padding: 15px;
-  height: 5rem;
+  object-fit: contain;
+  width: 100%;
+  height: 70px;
+  padding: 6px;
+  flex: 1;
 }
 
 /* Fim SIDEARMS */
+
+
+
+.card-collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: auto;
+    gap: 15px;
+    width: 100%;
+    max-width: 900px;
+    padding: 15px 0;
+}
+
+/* Player Card e Sprays */
+.player-card { grid-column: 1; grid-row: 1; }
+.preround { grid-column: 2; grid-row: 1; }
+.midround { grid-column: 2; grid-row: 4; }
+.postround { grid-column: 2; grid-row: 7; }
+
+/* Coluna 1 - SIDEARMS */
+.classic { grid-column: 1; grid-row: 2; }
+.shorty { grid-column: 1; grid-row: 3; }
+.frenzy { grid-column: 1; grid-row: 4; }
+.ghost { grid-column: 1; grid-row: 5; }
+.sheriff { grid-column: 1; grid-row: 6; }
+
+/* Coluna 2 - SMG e SHOTGUNS */
+.stinger { grid-column: 2; grid-row: 2; }
+.spectre { grid-column: 2; grid-row: 3; }
+.bucky { grid-column: 2; grid-row: 5; }
+.judge { grid-column: 2; grid-row: 6; }
+
+/* Coluna 3 - RIFLES */
+.bulldog { grid-column: 3; grid-row: 2; }
+.guardian { grid-column: 3; grid-row: 3; }
+.phantom { grid-column: 3; grid-row: 4; }
+.vandal { grid-column: 3; grid-row: 5; }
+.melee { grid-column: 3; grid-row: 7; }
+
+/* Coluna 4 - SNIPER RIFLES, MACHINE GUNS e MELEE */
+.marshal { grid-column: 4; grid-row: 2; }
+.outlaw { grid-column: 4; grid-row: 3; }
+.operator { grid-column: 4; grid-row: 4; }
+.ares { grid-column: 4; grid-row: 6; }
+.odin { grid-column: 4; grid-row: 7; }
+.odin { grid-column: 4; grid-row: 7; }
+        

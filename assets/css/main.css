@@ -18,35 +18,48 @@ body {
   display: flex;
   flex-direction: column;
   padding: 42px 64px 0 10px;
-
   float: left;
-}
+  }
 
 .itens-features {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 5px 0 0 0;
   cursor: pointer;
+  position: relative;
 }
 
-.text-coll {
-  padding: 20rem 0 0 1rem;
+.card-text{
   position: absolute;
+  top: 80%;
+  left: 10px;
+  transform: translateY(-20%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 10;
+  pointer-events: none;
+}
+
+
+.text-coll {
+  display: flex;
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
-  color: #ffffffe3;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .text-coll-p {
-  padding: 23.4rem 0 0 1rem;
-  position: absolute;
+  display: flex;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #ffffffb2;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .card-ammo,
