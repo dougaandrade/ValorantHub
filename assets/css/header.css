@@ -94,13 +94,13 @@ ion-icon {
 
 .background-nav > li > a:hover {
   color: #ffee00;
-  transform: translateY(-1px);
 }
 
 /* Elementos removidos - estilos não utilizados */
 
 .navbar-miss {
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: row;

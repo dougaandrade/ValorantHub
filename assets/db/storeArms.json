@@ -1,0 +1,68 @@
+{
+  "store": [
+    {
+      "id": "1",
+      "name": "Phantom BlastX",
+      "price": "1,775",
+      "edition": "Exclusive",
+      "icon-exclusive": "/assets/img/icon-exclusive/Exclusive-Edition.png",
+      "image": "/assets/img/store/BlastX_Phantom.webp"
+    },
+    {
+      "id": "2",
+      "name": "Ghost Magepunk",
+      "price": "1,775",
+      "edition": "Premium",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Magepunk_Ghost.webp"
+    },
+    {
+      "id": "3",
+      "price": "1,775",
+      "edition": "Premium",
+      "name": "Shorty Oni",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Oni_Shorty.webp"
+    },
+    {
+      "id": "4",
+      "price": "1,775",
+      "edition": "Premium",
+      "name": "Vandal Prime",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Prime_Vandal.webp"
+    },
+    {
+      "id": "5",
+      "price": "1,775",
+      "edition": "Premium",
+      "name": "Bucky Prime 2.0",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Prime_2.0_Bucky.webp"
+    },
+    {
+      "id": "6",
+      "price": "1,775",
+      "edition": "Premium",
+      "name": "Sheriff Reaver",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Reaver_Sheriff.webp"
+    },
+    {
+      "id": "7",
+      "price": "1,775",
+      "edition": "Premium",
+      "name": "Classic Prime",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Prime_Classic.webp"
+    },
+    {
+      "id": "8",
+      "name": "Ghost Reaver",
+      "price": "1,775",
+      "edition": "Premium",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Reaver_Ghost.webp"
+    }
+  ]
+}
