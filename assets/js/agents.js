@@ -1,89 +1,80 @@
-const imagemAgents = [
-  { player: "Jett", image: "../img/Jett_Artwork_Full.webp" },
-  { player: "Astra", image: "../img/Astra_Artwork_Full.webp" },
-  { player: "Breach", image: "../img/Breach_Artwork_Full.webp" },
-  { player: "Brimstone", image: "../img/Brimstone_Artwork_Full.webp" },
-  { player: "Chamber", image: "../img/Chamber_Artwork_Full.webp" },
-  { player: "Cypher", image: "../img/Cypher_Artwork_Full.webp" },
-  { player: "Deadlock", image: "../img/Deadlock_Artwork_Full.webp" },
-  { player: "Fade", image: "../img/Fade_Artwork_Full.webp" },
-  { player: "Gekko", image: "../img/Gekko_Artwork_Full.webp" },
-  { player: "Yoru", image: "../img/Yoru_Artwork_Full.webp" },
-  { player: "Viper", image: "../img/Viper_Artwork_Full.webp" },
-  { player: "Harbor", image: "../img/Harbor_Artwork_Full.webp" },
-  { player: "Kay-O", image: "../img/KAYO_Artwork_Full.webp" },
-  { player: "Killjoy", image: "../img/Killjoy_Artwork_Full.webp" },
-  { player: "Neon", image: "../img/Neon_Artwork_Full.webp" },
-  { player: "Omen", image: "../img/Omen_Artwork_Full.webp" },
-  { player: "Phoenix", image: "../img/Phoenix_Artwork_Full.webp" },
-  { player: "Raze", image: "../img/Raze_Artwork_Full.webp" },
-  { player: "Reyna", image: "../img/Reyna_Artwork_Full.webp" },
-  { player: "Sage", image: "../img/Sage_Artwork_Full.webp" },
-  { player: "Sova", image: "../img/Sova_Artwork_Full.webp" },
-  { player: "Skye", image: "../img/Skye_Artwork_Full.webp" },
-];
+// 1. Mudamos o nome da função para evitar conflito com a constante de dados
+async function fetchAgents() {
+  try {
+    const response = await fetch("/assets/db/agents.json");
+    if (!response.ok) throw new Error("Erro ao carregar o arquivo JSON");
 
-const img_main = document.querySelector(".agents-content");
-
-// Função para exibir uma imagem aleatória inicialmente
-function exibirImagemAleatoria() {
-  const randomImagens =
-    imagemAgents[Math.floor(Math.random() * imagemAgents.length)];
-
-  // Cria o elemento de imagem e define o caminho correto
-  const imgSelecionada = document.createElement("img");
-  imgSelecionada.src = randomImagens.image;
-  imgSelecionada.className = "agents_main";
-  img_main.appendChild(imgSelecionada);
-
-  const namePlayer = document.createElement("h1");
-  namePlayer.className = "name-agents";
-  namePlayer.innerText = randomImagens.player;
-  img_main.appendChild(namePlayer);
+    const data = await response.json();
+    return data.agents || data;
+  } catch (error) {
+    console.error("Erro:", error);
+    return null;
+  }
 }
-// Função para exibir os cards de agentes
-function exibirCardsHtml() {
-  const cardAgents = document.querySelector(".content");
 
-  imagemAgents.forEach((agent) => {
-    const cardHTML = `
-      <div class="card">
-        <div class="content-card">
-          <img src="${agent.image}" class="icon-agents">
-          <ion-icon name="lock-closed" class="icon-close"></ion-icon>
+// 2. Criamos uma função principal para garantir a ordem de execução
+async function init() {
+  // Aguarda os dados chegarem antes de continuar
+  const listaAgentes = await fetchAgents();
+
+  if (!listaAgentes) return; // Para se houver erro no fetch
+
+  const img_main = document.querySelector(".agents-content");
+
+  // Função para exibir a imagem e nome central (reutilizável)
+  function renderMainAgent(agent) {
+    // Limpa o conteúdo anterior de forma eficiente
+    img_main.innerHTML = "";
+
+    const imgElement = document.createElement("img");
+    imgElement.src = agent.image;
+    imgElement.className = "agents_main";
+
+    const nameElement = document.createElement("h1");
+    nameElement.className = "name-agents";
+    nameElement.innerText = agent.player || agent.name; // Ajustado para aceitar 'name' do nosso JSON
+
+    img_main.appendChild(imgElement);
+    img_main.appendChild(nameElement);
+  }
+
+  // Função para exibir os cards
+  function exibirCardsHtml() {
+    const cardContainer = document.querySelector(".content");
+
+    listaAgentes.forEach((agent, index) => {
+      const cardHTML = `
+        <div class="card" data-index="${index}">
+          <div class="content-card">
+            <img src="${agent.icon}" class="icon-agents">
+            <ion-icon name="lock-closed" class="icon-close"></ion-icon>
+          </div>
         </div>
-      </div>
-    `;
-    cardAgents.insertAdjacentHTML("beforeend", cardHTML);
-  });
-}
-// Função para manipular a seleção de um agente ao clicar no card
-function exibirPersonagens() {
-  const cards = document.querySelectorAll(".card");
-  cards.forEach((card, index) => {
-    card.addEventListener("click", function () {
-      // Remove a imagem e o nome anterior, se existirem
-      const ImagemAnterior = img_main.querySelector("img");
-      const NamePlayerAnterior = img_main.querySelector("h1");
-
-      if (ImagemAnterior) ImagemAnterior.remove();
-      if (NamePlayerAnterior) NamePlayerAnterior.remove();
-
-      // Cria e exibe a nova imagem do agente selecionado
-      const imgSelecionada = document.createElement("img");
-      imgSelecionada.src = imagemAgents[index].image;
-      imgSelecionada.className = "agents_main";
-      img_main.appendChild(imgSelecionada);
-
-      // Cria e exibe o nome do agente selecionado
-      const NamePlayer = document.querySelector(".name-agents");
-      NamePlayer.innerText = imagemAgents[index].player;
-      img_main.appendChild(NamePlayer);
+      `;
+      cardContainer.insertAdjacentHTML("beforeend", cardHTML);
     });
-  });
+
+    // Adiciona evento de clique logo após criar os cards
+    document.querySelectorAll(".card").forEach((card) => {
+      card.addEventListener("click", (e) => {
+        const idx = e.currentTarget.getAttribute("data-index");
+        renderMainAgent(listaAgentes[idx]);
+      });
+    });
+  }
+
+  // Executa o fluxo
+  exibirCardsHtml();
+
+  // Exibe um aleatório para começar
+  const randomAgent =
+    listaAgentes[Math.floor(Math.random() * listaAgentes.length)];
+  renderMainAgent(randomAgent);
 }
 
-// Chama as funções em ordem correta
-exibirCardsHtml();
-exibirPersonagens();
-exibirImagemAleatoria();
+// Inicializa tudo quando a página carregar
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}

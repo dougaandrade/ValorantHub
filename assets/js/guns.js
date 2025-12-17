@@ -1,11 +1,11 @@
 const imagensGuns = [
-  { tier: "TIER 1", guns: "../img/ammo1.webp" },
-  { tier: "TIER 2", guns: "../img/ammo2.webp" },
-  { tier: "TIER 3", guns: "../img/ammo3.webp" },
-  { tier: "TIER 4", guns: "../img/ammo4.webp" },
-  { tier: "TIER 5", guns: "../img/ammo5.webp" },
-  { tier: "TIER 6", guns: "../img/ammo6.webp" },
-  { tier: "TIER 7", guns: "../img/ammo7.webp" },
+  { tier: "TIER 1", guns: "/assets/img/battlepass/ammo1.webp" },
+  { tier: "TIER 2", guns: "/assets/img/battlepass/ammo2.webp" },
+  { tier: "TIER 3", guns: "/assets/img/battlepass/ammo3.webp" },
+  { tier: "TIER 4", guns: "/assets/img/battlepass/ammo4.webp" },
+  { tier: "TIER 5", guns: "/assets/img/battlepass/ammo5.webp" },
+  { tier: "TIER 6", guns: "/assets/img/battlepass/ammo6.webp" },
+  { tier: "TIER 7", guns: "/assets/img/battlepass/ammo7.webp" },
 ];
 
 let imagemAtual = imagensGuns;

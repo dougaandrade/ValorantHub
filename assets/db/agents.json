@@ -1,0 +1,1018 @@
+{
+  "metadata": {
+    "game": "VALORANT",
+    "developer": "Riot Games",
+    "last_updated": "2025-12-16",
+    "total_agents": 28
+  },
+  "agents": [
+    {
+      "id": "v-01",
+      "name": "Brimstone",
+      "origin": "USA",
+      "role": "Controller",
+      "biography": "Joining from the USA, Brimstone's orbital arsenal ensures his team always has the advantage.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Brimstone_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Brimstone_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Stim Beacon",
+          "cost": 200,
+          "description": "Deploy a beacon that grants RapidFire to players."
+        },
+        {
+          "slot": "Basic",
+          "name": "Incendiary",
+          "cost": 250,
+          "description": "Launch a grenade that creates a lingering fire zone."
+        },
+        {
+          "slot": "Signature",
+          "name": "Sky Smoke",
+          "cost": 100,
+          "description": "Deploy long-lasting smoke clouds via a tactical map."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Orbital Strike",
+          "points": 8,
+          "description": "Launch a high-damage orbital laser strike."
+        }
+      ]
+    },
+    {
+      "id": "v-02",
+      "name": "Phoenix",
+      "origin": "United Kingdom",
+      "role": "Duelist",
+      "biography": "Starring from the UK, Phoenix's star power shines through in his fighting style, igniting the battlefield.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Phoenix_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Phoenix_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Blaze",
+          "cost": 200,
+          "description": "Equip a wall of fire that blocks vision and damages players."
+        },
+        {
+          "slot": "Basic",
+          "name": "Curveball",
+          "cost": 250,
+          "description": "Equip a flare orb that takes a curving path and detonate into a brilliant light."
+        },
+        {
+          "slot": "Signature",
+          "name": "Hot Hands",
+          "cost": 0,
+          "description": "Throw a fireball that creates a zone of fire that heals Phoenix or damages enemies."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Run It Back",
+          "points": 6,
+          "description": "Mark your location. If you die or the timer expires, you will be reborn at that location."
+        }
+      ]
+    },
+    {
+      "id": "v-03",
+      "name": "Sage",
+      "origin": "China",
+      "role": "Sentinel",
+      "biography": "The stronghold of China, Sage creates safety for herself and her team wherever she goes.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Sage_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Sage_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Barrier Orb",
+          "cost": 400,
+          "description": "Deploy a solid wall that can be rotated."
+        },
+        {
+          "slot": "Basic",
+          "name": "Slow Orb",
+          "cost": 200,
+          "description": "Launch an orb that creates a field that slows players caught inside."
+        },
+        {
+          "slot": "Signature",
+          "name": "Healing Orb",
+          "cost": 0,
+          "description": "Heal an ally or yourself over time."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Resurrection",
+          "points": 8,
+          "description": "Target a friendly corpse to bring them back to life with full health."
+        }
+      ]
+    },
+    {
+      "id": "v-04",
+      "name": "Sova",
+      "origin": "Russia",
+      "role": "Initiator",
+      "biography": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Sova_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Sova_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Owl Drone",
+          "cost": 400,
+          "description": "Deploy a pilotable drone to scout and fire darts that reveal enemies."
+        },
+        {
+          "slot": "Basic",
+          "name": "Shock Bolt",
+          "cost": 150,
+          "description": "Fire an explosive bolt that emits a damaging pulse of energy on impact."
+        },
+        {
+          "slot": "Signature",
+          "name": "Recon Bolt",
+          "cost": 0,
+          "description": "Fire a bolt that deploys a sonar emitter, revealing nearby enemies."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Hunter's Fury",
+          "points": 8,
+          "description": "Fire up to three long-range energy blasts that pierce walls and reveal enemies."
+        }
+      ]
+    },
+    {
+      "id": "v-04a",
+      "name": "Viper",
+      "origin": "USA",
+      "role": "Controller",
+      "biography": "The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Viper_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Viper_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Snake Bite",
+          "cost": 200,
+          "description": "Fire a projectile that explodes into a pool of damaging acid."
+        },
+        {
+          "slot": "Basic",
+          "name": "Poison Cloud",
+          "cost": 200,
+          "description": "Throw a gas emitter that creates a poisonous cloud."
+        },
+        {
+          "slot": "Signature",
+          "name": "Toxic Screen",
+          "cost": 0,
+          "description": "Deploy a long line of gas emitters that create a tall wall of toxic gas."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Viper's Pit",
+          "points": 8,
+          "description": "Emit a massive toxic cloud that reduces vision and max health of enemies inside."
+        }
+      ]
+    },
+    {
+      "id": "v-04b",
+      "name": "Cypher",
+      "origin": "Morocco",
+      "role": "Sentinel",
+      "biography": "The Moroccan information broker, Cypher is a surveillance network of one, keeping tabs on enemies at all times.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Cypher_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Cypher_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Cyber Cage",
+          "cost": 200,
+          "description": "Throw a remote activation trap that creates a zone blocking vision and slowing enemies."
+        },
+        {
+          "slot": "Basic",
+          "name": "Spycam",
+          "cost": 200,
+          "description": "Deploy a remote camera that can fire tracking darts."
+        },
+        {
+          "slot": "Signature",
+          "name": "Trapwire",
+          "cost": 0,
+          "description": "Place a trap between two walls that restrains and reveals enemies."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Neural Theft",
+          "points": 6,
+          "description": "Use on a dead enemy to reveal the location of all living enemies."
+        }
+      ]
+    },
+    {
+      "id": "v-04c",
+      "name": "Breach",
+      "origin": "Sweden",
+      "role": "Initiator",
+      "biography": "The bionic Swede, Breach fires powerful blasts through terrain to control the battlefield.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Breach_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Breach_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Aftershock",
+          "cost": 200,
+          "description": "Fire a slow-acting burst through a wall that deals heavy damage."
+        },
+        {
+          "slot": "Basic",
+          "name": "Flashpoint",
+          "cost": 250,
+          "description": "Set a fast-acting charge through walls that blinds all players."
+        },
+        {
+          "slot": "Signature",
+          "name": "Fault Line",
+          "cost": 0,
+          "description": "Set a seismic blast that dazes all players in its zone."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Rolling Thunder",
+          "points": 7,
+          "description": "Fire a cascading quake that dazes and knocks up anyone in its path."
+        }
+      ]
+    },
+    {
+      "id": "v-04d",
+      "name": "Omen",
+      "origin": "Unknown",
+      "role": "Controller",
+      "biography": "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Omen_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Omen_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Shrouded Step",
+          "cost": 150,
+          "description": "Teleport a short distance."
+        },
+        {
+          "slot": "Basic",
+          "name": "Paranoia",
+          "cost": 300,
+          "description": "Send out a shadowy projectile that nearsights and deafens enemies."
+        },
+        {
+          "slot": "Signature",
+          "name": "Dark Cover",
+          "cost": 0,
+          "description": "Cast a shadow orb that creates a sphere of shadow smoke."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "From the Shadows",
+          "points": 7,
+          "description": "Teleport to any location on the map."
+        }
+      ]
+    },
+    {
+      "id": "v-04e",
+      "name": "Raze",
+      "origin": "Brazil",
+      "role": "Duelist",
+      "biography": "Raze explodes onto the field with her arsenal of explosive gadgets, bringing mayhem wherever she goes.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Raze_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Raze_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Boom Bot",
+          "cost": 400,
+          "description": "Deploy a bot that chases down enemies and explodes."
+        },
+        {
+          "slot": "Basic",
+          "name": "Blast Pack",
+          "cost": 200,
+          "description": "Throw a satchel that can be detonated to damage and displace."
+        },
+        {
+          "slot": "Signature",
+          "name": "Paint Shells",
+          "cost": 0,
+          "description": "Throw a cluster grenade that deals damage in multiple blasts."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Showstopper",
+          "points": 8,
+          "description": "Equip a rocket launcher that deals massive area damage."
+        }
+      ]
+    },
+    {
+      "id": "v-05",
+      "name": "Jett",
+      "origin": "South Korea",
+      "role": "Duelist",
+      "biography": "Representing South Korea, Jett's agile style lets her take risks no one else can.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Jett_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Jett_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Cloudburst",
+          "cost": 200,
+          "description": "Throw a projectile that expands into a vision-blocking cloud."
+        },
+        {
+          "slot": "Basic",
+          "name": "Updraft",
+          "cost": 150,
+          "description": "Instantly propel Jett high into the air."
+        },
+        {
+          "slot": "Signature",
+          "name": "Tailwind",
+          "cost": 0,
+          "description": "Dash in the direction she is moving (requires 2 kills to refresh)."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Blade Storm",
+          "points": 8,
+          "description": "Equip highly accurate throwing knives that recharge on kills."
+        }
+      ]
+    },
+    {
+      "id": "v-06",
+      "name": "Reyna",
+      "origin": "Mexico",
+      "role": "Duelist",
+      "biography": "Forged in the heart of Mexico, Reyna dominates single combat, feasting on every kill she effects.",
+      "release_date": "2020-06-02",
+      "image": "../img/agents/Reyna_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Reyna_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Leer",
+          "cost": 250,
+          "description": "Equip an ethereal eye that Nearsights all enemies who look at it."
+        },
+        {
+          "slot": "Signature",
+          "name": "Devour",
+          "cost": 200,
+          "description": "Consume a Soul Orb to rapidly heal for a short duration."
+        },
+        {
+          "slot": "Signature",
+          "name": "Dismiss",
+          "cost": 200,
+          "description": "Consume a Soul Orb to become intangible for a short duration."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Empress",
+          "points": 9,
+          "description": "Enter a frenzy, increasing firing speed and granting infinite ability charges."
+        }
+      ]
+    },
+    {
+      "id": "v-07",
+      "name": "Killjoy",
+      "origin": "Germany",
+      "role": "Sentinel",
+      "biography": "The genius of Germany, Killjoy secures the battlefield with her array of gadgets.",
+      "release_date": "2020-08-04",
+      "image": "../img/agents/Killjoy_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Killjoy_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Nanoswarm",
+          "cost": 200,
+          "description": "Throw a grenade that deploys a damaging swarm of nanobots."
+        },
+        {
+          "slot": "Basic",
+          "name": "Alarmbot",
+          "cost": 200,
+          "description": "Deploy a bot that hunts down enemies in range and applies Vulnerable."
+        },
+        {
+          "slot": "Signature",
+          "name": "Turret",
+          "cost": 0,
+          "description": "Deploy a turret that fires at enemies in a 180-degree cone."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Lockdown",
+          "points": 9,
+          "description": "Deploy a device that detains all enemies caught in its radius after a long windup."
+        }
+      ]
+    },
+    {
+      "id": "v-08",
+      "name": "Skye",
+      "origin": "Australia",
+      "role": "Initiator",
+      "biography": "Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory.",
+      "release_date": "2020-10-27",
+      "image": "../img/agents/Skye_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Skye_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Regrowth",
+          "cost": 150,
+          "description": "Heal allies in range and line of sight."
+        },
+        {
+          "slot": "Basic",
+          "name": "Trailblazer",
+          "cost": 300,
+          "description": "Control a Tasmanian tiger to scout and concuss enemies."
+        },
+        {
+          "slot": "Signature",
+          "name": "Guiding Light",
+          "cost": 250,
+          "description": "Equip a hawk spirit that can be guided and detonated to flash enemies."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Seekers",
+          "points": 8,
+          "description": "Send out three seekers to track and nearsight the nearest enemies."
+        }
+      ]
+    },
+    {
+      "id": "v-09",
+      "name": "Yoru",
+      "origin": "Japan",
+      "role": "Duelist",
+      "biography": "Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen.",
+      "release_date": "2021-01-12",
+      "image": "../img/agents/Yoru_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Yoru_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Fakeout",
+          "cost": 100,
+          "description": "Deploy an echo that mimics footsteps or a clone that flashes on death."
+        },
+        {
+          "slot": "Basic",
+          "name": "Blindside",
+          "cost": 250,
+          "description": "Throw a fragment that bounces off surfaces to create a flash."
+        },
+        {
+          "slot": "Signature",
+          "name": "Gatecrash",
+          "cost": 0,
+          "description": "Deploy a rift tether to teleport to its location later."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Dimensional Drift",
+          "points": 7,
+          "description": "Mask yourself and enter Yoru's dimension, becoming invisible and invulnerable."
+        }
+      ]
+    },
+    {
+      "id": "v-10",
+      "name": "Astra",
+      "origin": "Ghana",
+      "role": "Controller",
+      "biography": "Ghanaian agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim.",
+      "release_date": "2021-03-02",
+      "image": "../img/agents/Astra_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Astra_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Gravity Well",
+          "cost": 0,
+          "description": "Pull players towards the center before it explodes, applying Fragile."
+        },
+        {
+          "slot": "Basic",
+          "name": "Nova Pulse",
+          "cost": 0,
+          "description": "Charge a star to detonate a pulse that concusses all players in its area."
+        },
+        {
+          "slot": "Signature",
+          "name": "Nebula",
+          "cost": 0,
+          "description": "Transform a star into a smoke cloud."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Cosmic Divide",
+          "points": 7,
+          "description": "Create a wall that blocks bullets and heavily dampens audio."
+        }
+      ]
+    },
+    {
+      "id": "v-11",
+      "name": "KAY/O",
+      "origin": "Alternative Timeline",
+      "role": "Initiator",
+      "biography": "KAY/O is a machine of war built for a single purpose: neutralizing radiants.",
+      "release_date": "2021-06-22",
+      "image": "../img/agents/KAYO_Artwork_Full.webp",
+      "icon": "../img/icons-agents/KAYO_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "FRAG/ment",
+          "cost": 200,
+          "description": "Throw an explosive fragment that sticks to the floor and pulses damaging energy."
+        },
+        {
+          "slot": "Basic",
+          "name": "FLASH/drive",
+          "cost": 250,
+          "description": "Throw a flash grenade that explodes after a short fuse."
+        },
+        {
+          "slot": "Signature",
+          "name": "ZERO/point",
+          "cost": 0,
+          "description": "Throw a blade that suppresses anyone in the radius of its explosion."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "NULL/cmd",
+          "points": 8,
+          "description": "Emit pulses that suppress enemies and allow KAY/O to be revived if downed."
+        }
+      ]
+    },
+    {
+      "id": "v-12",
+      "name": "Chamber",
+      "origin": "France",
+      "role": "Sentinel",
+      "biography": "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision.",
+      "release_date": "2021-11-16",
+      "image": "../img/agents/Chamber_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Chamber_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Trademark",
+          "cost": 200,
+          "description": "Place a trap that scans for enemies and slows them."
+        },
+        {
+          "slot": "Basic",
+          "name": "Headhunter",
+          "cost": 150,
+          "description": "Equip a heavy pistol with high precision."
+        },
+        {
+          "slot": "Signature",
+          "name": "Rendezvous",
+          "cost": 0,
+          "description": "Place a teleport anchor to quickly return to its range."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Tour De Force",
+          "points": 8,
+          "description": "Summon a powerful custom sniper rifle that kills enemies in one hit."
+        }
+      ]
+    },
+    {
+      "id": "v-13",
+      "name": "Neon",
+      "origin": "Philippines",
+      "role": "Duelist",
+      "biography": "Filipino agent Neon surges forward at shocking speeds, discharging bursts of bio-electric radiance.",
+      "release_date": "2022-01-11",
+      "image": "../img/agents/Neon_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Neon_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Fast Lane",
+          "cost": 300,
+          "description": "Fire two energy lines that create walls of static electricity."
+        },
+        {
+          "slot": "Basic",
+          "name": "Relay Bolt",
+          "cost": 200,
+          "description": "Throw an energy bolt that bounces once and electrifies the ground with a concussive blast."
+        },
+        {
+          "slot": "Signature",
+          "name": "High Gear",
+          "cost": 0,
+          "description": "Channel Neon's power for increased speed and an electric slide."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Overdrive",
+          "points": 7,
+          "description": "Unleash Neon's full power and speed for a short duration, firing lethal lightning beams."
+        }
+      ]
+    },
+    {
+      "id": "v-14",
+      "name": "Fade",
+      "origin": "Turkey",
+      "role": "Initiator",
+      "biography": "Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets.",
+      "release_date": "2022-04-27",
+      "image": "../img/agents/Fade_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Fade_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Prowler",
+          "cost": 250,
+          "description": "Send out a creature that tracks enemies or trails and nearsights them."
+        },
+        {
+          "slot": "Basic",
+          "name": "Seize",
+          "cost": 200,
+          "description": "Launch an orb of nightmare ink that traps enemies and decays them."
+        },
+        {
+          "slot": "Signature",
+          "name": "Haunt",
+          "cost": 0,
+          "description": "Throw an entity that reveals the location of enemies in its line of sight."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Nightfall",
+          "points": 9,
+          "description": "Send out a wave of nightmare energy that deafens, decays, and trails enemies."
+        }
+      ]
+    },
+    {
+      "id": "v-15",
+      "name": "Harbor",
+      "origin": "India",
+      "role": "Controller",
+      "biography": "Hailing from India, Harbor wields ancient technology with dominion over water to shield his team.",
+      "release_date": "2022-10-18",
+      "image": "../img/agents/Harbor_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Harbor_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Cascade",
+          "cost": 150,
+          "description": "Send a wave of water that rolls forward and through walls, slowing players."
+        },
+        {
+          "slot": "Basic",
+          "name": "Cove",
+          "cost": 350,
+          "description": "Throw a sphere of shielding water that blocks bullets."
+        },
+        {
+          "slot": "Signature",
+          "name": "High Tide",
+          "cost": 0,
+          "description": "Equip a wall of water that Harbor can guide and bend."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Reckoning",
+          "points": 7,
+          "description": "Summon a geyser pool on the ground that strikes enemies with concussive blasts."
+        }
+      ]
+    },
+    {
+      "id": "v-16",
+      "name": "Gekko",
+      "origin": "USA",
+      "role": "Initiator",
+      "biography": "Gekko leads a tight-knit crew of calamitous creatures, charging forward to scatter enemies.",
+      "release_date": "2023-03-07",
+      "image": "../img/agents/Gekko_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Gekko_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Mosh Pit",
+          "cost": 250,
+          "description": "Throw Mosh like a grenade; it duplicates and explodes in a wide area."
+        },
+        {
+          "slot": "Basic",
+          "name": "Wingman",
+          "cost": 300,
+          "description": "Send Wingman to look for enemies or plant/defuse the Spike."
+        },
+        {
+          "slot": "Signature",
+          "name": "Dizzy",
+          "cost": 0,
+          "description": "Fire Dizzy into the air to blind enemies with plasma blasts."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Thrash",
+          "points": 8,
+          "description": "Control Thrash to lunge at enemies and detain them."
+        }
+      ]
+    },
+    {
+      "id": "v-17",
+      "name": "Deadlock",
+      "origin": "Norway",
+      "role": "Sentinel",
+      "biography": "Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield.",
+      "release_date": "2023-06-27",
+      "image": "../img/agents/Deadlock_Artwork_Full.webp",
+      "icon": "../img/icons-agents/Deadlock_icon.webp",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "GravNet",
+          "cost": 200,
+          "description": "Throw a grenade that forces enemies to crouch and move slowly."
+        },
+        {
+          "slot": "Basic",
+          "name": "Sonic Sensor",
+          "cost": 200,
+          "description": "Deploy a sensor that concusses enemies if they make noise."
+        },
+        {
+          "slot": "Signature",
+          "name": "Barrier Mesh",
+          "cost": 0,
+          "description": "Throw a disc that generates a barrier blocking character movement."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Annihilation",
+          "points": 7,
+          "description": "Unleash a pulse of nanowires that captures the first enemy hit in a cocoon."
+        }
+      ]
+    },
+    {
+      "id": "v-18",
+      "name": "Iso",
+      "origin": "China",
+      "role": "Duelist",
+      "biography": "A Chinese fixer for hire, Iso falls into a flow state to dismantle opposition with prismatic energy.",
+      "release_date": "2023-10-31",
+      "image": "../img/agents/Iso.webp",
+      "icon": "../img/icons-agents/iso.png",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Contingency",
+          "cost": 250,
+          "description": "Assemble a wall of energy that blocks bullets and moves forward."
+        },
+        {
+          "slot": "Basic",
+          "name": "Undercut",
+          "cost": 200,
+          "description": "Fire a molecular bolt that can pass through walls and applies Vulnerable."
+        },
+        {
+          "slot": "Signature",
+          "name": "Double Tap",
+          "cost": 0,
+          "description": "Start a flow timer. Downed enemies drop orbs that, when shot, grant a shield."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Kill Contract",
+          "points": 7,
+          "description": "Pull yourself and an enemy into an interdimensional arena for a 1v1 duel."
+        }
+      ]
+    },
+    {
+      "id": "v-19",
+      "name": "Clove",
+      "origin": "Scotland",
+      "role": "Controller",
+      "biography": "Scottish mischief-maker Clove makes enemies wonder if death is really the end.",
+      "release_date": "2024-03-26",
+      "image": "../img/agents/clove.webp",
+      "icon": "../img/icons-agents/clove.png",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Pick-me-up",
+          "cost": 100,
+          "description": "Absorb life energy from a fallen enemy for haste and temporary health."
+        },
+        {
+          "slot": "Basic",
+          "name": "Meddle",
+          "cost": 250,
+          "description": "Throw a fragment of immortality essence that decays targets."
+        },
+        {
+          "slot": "Signature",
+          "name": "Ruse",
+          "cost": 0,
+          "description": "Deploy smoke clouds that can be cast even after death."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Not Dead Yet",
+          "points": 7,
+          "description": "Resurrect yourself after dying, with a short window to get a kill to stay alive."
+        }
+      ]
+    },
+    {
+      "id": "v-20",
+      "name": "Vyse",
+      "origin": "Unknown",
+      "role": "Sentinel",
+      "biography": "A metallic mastermind who uses liquid metal to trap and disarm her enemies.",
+      "release_date": "2024-08-28",
+      "image": "../img/agents/vyse.webp",
+      "icon": "../img/icons-agents/vyse.png",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Razorvine",
+          "cost": 150,
+          "description": "Deploy a nest of invisible liquid metal that slows and damages enemies."
+        },
+        {
+          "slot": "Basic",
+          "name": "Shear",
+          "cost": 200,
+          "description": "Place a trip that creates an indestructible wall when an enemy crosses it."
+        },
+        {
+          "slot": "Signature",
+          "name": "Arc Rose",
+          "cost": 0,
+          "description": "Place a rose that can be activated to blind all enemies looking at it."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Steel Garden",
+          "points": 8,
+          "description": "Unleash a torrent of metal that jams the primary weapons of enemies in range."
+        }
+      ]
+    },
+    {
+      "id": "v-21",
+      "name": "Tejo",
+      "origin": "Colombia",
+      "role": "Initiator",
+      "biography": "A Colombian expert in heavy ordinance and tactical surveillance.",
+      "release_date": "2025-01-08",
+      "image": "../img/agents/tejo.webp",
+      "icon": "../img/icons-agents/tejo.png",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Guided Charge",
+          "cost": 200,
+          "description": "Remotely detonated explosive that sticks to surfaces."
+        },
+        {
+          "slot": "Basic",
+          "name": "Sonic Sensor",
+          "cost": 200,
+          "description": "Detects and reveals enemies through sound vibrations."
+        },
+        {
+          "slot": "Signature",
+          "name": "Flare Recon",
+          "cost": 0,
+          "description": "Fires a scouting flare that marks enemies in line of sight."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Ground Zero",
+          "points": 9,
+          "description": "Seismic strike that concusses and decays enemies in a massive zone."
+        }
+      ]
+    },
+    {
+      "id": "v-22",
+      "name": "Waylay",
+      "origin": "Unknown",
+      "role": "Duelist",
+      "biography": "A shadow-stepping duelist focused on psychological warfare and positioning.",
+      "release_date": "2025-03-05",
+      "image": "../img/agents/waylay.webp",
+      "icon": "../img/icons-agents/waylay.png",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Afterimage",
+          "cost": 200,
+          "description": "Create a stationary decoy that explodes when shot."
+        },
+        {
+          "slot": "Basic",
+          "name": "Echo Slash",
+          "cost": 250,
+          "description": "Dash forward leaving a damaging trail behind."
+        },
+        {
+          "slot": "Signature",
+          "name": "Phase Shift",
+          "cost": 0,
+          "description": "Become briefly untargetable while moving through obstacles."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Mirrored Death",
+          "points": 8,
+          "description": "Splits into three identical clones, only one being the real Waylay."
+        }
+      ]
+    },
+    {
+      "id": "v-23",
+      "name": "Veto",
+      "origin": "Unknown",
+      "role": "Sentinel",
+      "biography": "An advanced tactician who specializes in denying area access and utility usage.",
+      "release_date": "2025-10-07",
+      "image": "../img/agents/veto.webp",
+      "icon": "../img/icons-agents/veto.png",
+      "abilities": [
+        {
+          "slot": "Basic",
+          "name": "Grid Lock",
+          "cost": 200,
+          "description": "Creates a digital floor that prevents ability usage for 3 seconds."
+        },
+        {
+          "slot": "Basic",
+          "name": "Denial Pylon",
+          "cost": 300,
+          "description": "Deploys a pylon that shoots down incoming projectiles."
+        },
+        {
+          "slot": "Signature",
+          "name": "Void Screen",
+          "cost": 0,
+          "description": "Deploy a transparent wall that blocks passage but allows vision."
+        },
+        {
+          "slot": "Ultimate",
+          "name": "Total Embargo",
+          "points": 9,
+          "description": "Drains the ultimate points and ability charges of all enemies in a radius."
+        }
+      ]
+    }
+  ]
+}
