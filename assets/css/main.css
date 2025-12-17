@@ -1,6 +1,6 @@
 
 body {
-  background: url("../img/homescreen_ep7a2_705.webp") no-repeat center;
+  background: url("/assets/img/background/homescreen_ep7a2_705.webp") no-repeat center;
   height: 100vh;
   max-width: 100%;
   background-blend-mode: color;
