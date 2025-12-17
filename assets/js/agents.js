@@ -57,7 +57,7 @@ async function init() {
     // Adiciona evento de clique logo após criar os cards
     document.querySelectorAll(".card").forEach((card) => {
       card.addEventListener("click", (e) => {
-        const idx = e.currentTarget.getAttribute("data-index");
+        const idx = e.currentTarget.dataset.index;
         renderMainAgent(listaAgentes[idx]);
       });
     });

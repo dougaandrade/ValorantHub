@@ -1,0 +1,234 @@
+{
+  "career": [
+    {
+      "player_stats": {
+        "current_rank": {
+          "name": "RADIANT",
+          "leaderboard_position": 500,
+          "rank_rating": 19,
+          "max_rating": 100,
+          "icon_url": "../img/Radiant_Rank.webp"
+        },
+        "game_modes": ["Unrated", "Competitive", "Swiftplay"],
+        "match_history": [
+          {
+            "agent": "Cypher",
+            "agent_icon": "/assets/img/icons-agents/Cypher_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 5,
+            "kda": "25/11/4",
+            "combat_score": 6888,
+            "is_mvp": false,
+            "map_name": "Sunset",
+            "map_image": "/assets/img/maps/sunset.webp"
+          },
+          {
+            "agent": "Chamber",
+            "agent_icon": "/assets/img/icons-agents/Chamber_icon.webp",
+            "result": "DEFEAT",
+            "score_friendly": 13,
+            "score_enemy": 15,
+            "kda": "5/11/4",
+            "combat_score": 6888,
+            "is_mvp": true,
+            "map_name": "Split",
+            "map_image": "/assets/img/maps/split.webp"
+          },
+          {
+            "agent": "Chamber",
+            "agent_icon": "/assets/img/icons-agents/Chamber_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 5,
+            "kda": "25/11/4",
+            "combat_score": 6888,
+            "is_mvp": true,
+            "map_name": "Sunset",
+            "map_image": "/assets/img/maps/sunset.webp"
+          },
+          {
+            "agent": "Jett",
+            "agent_icon": "/assets/img/icons-agents/Jett_icon.webp",
+            "result": "DEFEAT",
+            "score_friendly": 1,
+            "score_enemy": 13,
+            "kda": "2/11/4",
+            "combat_score": 6888,
+            "is_mvp": true,
+            "map_name": "Ascent",
+            "map_image": "/assets/img/maps/ascent.webp"
+          },
+          {
+            "agent": "Deadlock",
+            "agent_icon": "/assets/img/icons-agents/Deadlock_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 5,
+            "kda": "25/11/4",
+            "combat_score": 6888,
+            "is_mvp": true,
+            "map_name": "Split",
+            "map_image": "/assets/img/maps/split.webp"
+          },
+          {
+            "agent": "Jett",
+            "agent_icon": "/assets/img/icons-agents/Jett_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 5,
+            "kda": "25/11/4",
+            "combat_score": 6888,
+            "is_mvp": false,
+            "map_name": "Sunset",
+            "map_image": "/assets/img/maps/sunset.webp"
+          },
+          {
+            "agent": "Gekko",
+            "agent_icon": "/assets/img/icons-agents/Gekko_icon.webp",
+            "result": "DEFEAT",
+            "score_friendly": 9,
+            "score_enemy": 13,
+            "kda": "15/11/4",
+            "combat_score": 6888,
+            "is_mvp": true,
+            "map_name": "Split",
+            "map_image": "/assets/img/maps/split.webp"
+          },
+          {
+            "agent": "KAYO",
+            "agent_icon": "/assets/img/icons-agents/KAYO_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 5,
+            "kda": "25/11/4",
+            "combat_score": 6888,
+            "is_mvp": false,
+            "map_name": "Sunset",
+            "map_image": "/assets/img/maps/sunset.webp"
+          },
+          {
+            "agent": "Reyna",
+            "agent_icon": "/assets/img/icons-agents/Reyna_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 10,
+            "kda": "28/9/3",
+            "combat_score": 7245,
+            "is_mvp": true,
+            "map_name": "Haven",
+            "map_image": "/assets/img/maps/haven.webp"
+          },
+          {
+            "agent": "Sage",
+            "agent_icon": "/assets/img/icons-agents/Sage_icon.webp",
+            "result": "DEFEAT",
+            "score_friendly": 11,
+            "score_enemy": 13,
+            "kda": "18/15/7",
+            "combat_score": 5432,
+            "is_mvp": false,
+            "map_name": "Bind",
+            "map_image": "/assets/img/maps/bind.webp"
+          },
+          {
+            "agent": "Raze",
+            "agent_icon": "/assets/img/icons-agents/Raze_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 8,
+            "kda": "22/10/5",
+            "combat_score": 6754,
+            "is_mvp": true,
+            "map_name": "Ascent",
+            "map_image": "/assets/img/maps/ascent.webp"
+          },
+          {
+            "agent": "Omen",
+            "agent_icon": "/assets/img/icons-agents/Omen_icon.webp",
+            "result": "DEFEAT",
+            "score_friendly": 7,
+            "score_enemy": 13,
+            "kda": "12/16/6",
+            "combat_score": 4890,
+            "is_mvp": false,
+            "map_name": "Icebox",
+            "map_image": "/assets/img/maps/icebox.webp"
+          },
+          {
+            "agent": "Sova",
+            "agent_icon": "/assets/img/icons-agents/Sova_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 11,
+            "kda": "19/12/8",
+            "combat_score": 6123,
+            "is_mvp": false,
+            "map_name": "Breeze",
+            "map_image": "/assets/img/maps/breeze.webp"
+          },
+          {
+            "agent": "Phoenix",
+            "agent_icon": "/assets/img/icons-agents/Phoenix_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 6,
+            "kda": "24/8/6",
+            "combat_score": 7012,
+            "is_mvp": true,
+            "map_name": "Split",
+            "map_image": "/assets/img/maps/split.webp"
+          },
+          {
+            "agent": "Viper",
+            "agent_icon": "/assets/img/icons-agents/Viper_icon.webp",
+            "result": "DEFEAT",
+            "score_friendly": 10,
+            "score_enemy": 13,
+            "kda": "14/14/5",
+            "combat_score": 5567,
+            "is_mvp": false,
+            "map_name": "Lotus",
+            "map_image": "/assets/img/maps/lotus.webp"
+          },
+          {
+            "agent": "Breach",
+            "agent_icon": "/assets/img/icons-agents/Breach_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 9,
+            "kda": "17/11/12",
+            "combat_score": 6234,
+            "is_mvp": false,
+            "map_name": "Pearl",
+            "map_image": "/assets/img/maps/pearl.webp"
+          },
+          {
+            "agent": "Neon",
+            "agent_icon": "/assets/img/icons-agents/Neon_icon.webp",
+            "result": "VICTORY",
+            "score_friendly": 13,
+            "score_enemy": 7,
+            "kda": "26/9/4",
+            "combat_score": 7456,
+            "is_mvp": true,
+            "map_name": "Fracture",
+            "map_image": "/assets/img/maps/fracture.webp"
+          },
+          {
+            "agent": "Killjoy",
+            "agent_icon": "/assets/img/icons-agents/Killjoy_icon.webp",
+            "result": "DEFEAT",
+            "score_friendly": 8,
+            "score_enemy": 13,
+            "kda": "11/15/7",
+            "combat_score": 4923,
+            "is_mvp": false,
+            "map_name": "Haven",
+            "map_image": "/assets/img/maps/haven.webp"
+          }
+        ]
+      }
+    }
+  ]
+}
