@@ -931,7 +931,7 @@
         {
           "slot": "Signature",
           "name": "Flare Recon",
-          "cost": 0,
+          "cost": 100,
           "description": "Fires a scouting flare that marks enemies in line of sight."
         },
         {

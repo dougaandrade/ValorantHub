@@ -12,44 +12,52 @@ async function fetchAgents() {
   }
 }
 
-// 2. Criamos uma função principal para garantir a ordem de execução
+function renderMainAgent(agent) {
+  const mainContainer = document.querySelector(".agents-content");
+
+  mainContainer.innerHTML = `
+  <img src="${agent.image}" alt="${agent.name}" class="agents_main" />
+  <div class="agents-container">
+    <span class="name-agents">${agent.name}</span>
+    <p class="biography-agents">${agent.biography}</p>
+    <p class="role-agents">${agent.role}</p>
+    </div>
+    <h3 class="abilities-title">Habilidades</h3>
+    <div class="abilities-container">
+      ${agent.abilities
+        .map(
+          (ability) => `
+        <div class="ability-card">
+          
+          <h4 class="ability-name">${ability.name}</h4>
+          <h5 class="ability-cost">Custo: ${
+            ability.cost || ability.points || "0"
+          }</h5>
+          <p class="ability-description">${ability.description}</p>
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 async function init() {
-  // Aguarda os dados chegarem antes de continuar
   const listaAgentes = await fetchAgents();
 
-  if (!listaAgentes) return; // Para se houver erro no fetch
+  if (!listaAgentes) return;
 
-  const img_main = document.querySelector(".agents-content");
-
-  // Função para exibir a imagem e nome central (reutilizável)
-  function renderMainAgent(agent) {
-    // Limpa o conteúdo anterior de forma eficiente
-    img_main.innerHTML = "";
-
-    const imgElement = document.createElement("img");
-    imgElement.src = agent.image;
-    imgElement.className = "agents_main";
-
-    const nameElement = document.createElement("h1");
-    nameElement.className = "name-agents";
-    nameElement.innerText = agent.player || agent.name; // Ajustado para aceitar 'name' do nosso JSON
-
-    img_main.appendChild(imgElement);
-    img_main.appendChild(nameElement);
-  }
-
-  // Função para exibir os cards
   function exibirCardsHtml() {
     const cardContainer = document.querySelector(".content");
 
     listaAgentes.forEach((agent, index) => {
       const cardHTML = `
-        <div class="card" data-index="${index}">
-          <div class="content-card">
-            <img src="${agent.icon}" class="icon-agents">
-            <ion-icon name="lock-closed" class="icon-close"></ion-icon>
-          </div>
+      <div class="card" data-index="${index}">
+        <div class="content-card">
+          <img src="${agent.icon}" class="icon-agents">
+          <ion-icon name="lock-closed" class="icon-close"></ion-icon>
         </div>
+      </div>
       `;
       cardContainer.insertAdjacentHTML("beforeend", cardHTML);
     });
@@ -64,17 +72,14 @@ async function init() {
   }
 
   // Executa o fluxo
-  exibirCardsHtml();
 
   // Exibe um aleatório para começar
-  const randomAgent =
+  const agenteAleatorio =
     listaAgentes[Math.floor(Math.random() * listaAgentes.length)];
-  renderMainAgent(randomAgent);
+  renderMainAgent(agenteAleatorio);
+  exibirCardsHtml();
 }
 
-// Inicializa tudo quando a página carregar
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", init);
-} else {
-  init();
-}
+// Exibe os cards
+
+document.addEventListener("DOMContentLoaded", init);

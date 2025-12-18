@@ -18,6 +18,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+     font-family: "Inter", sans-serif;
 }
 
 ion-icon {
@@ -90,8 +91,10 @@ main {
   justify-content: flex-end;
   align-items: center;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 7rem;
+  font-style: italic;
+  font-size: 8rem;
   color: #fff;
+  z-index: 1;
 }
 
 .text-agents {
@@ -110,8 +113,8 @@ main {
 }
 
 .agents_main {
-  width: 59rem;
-  aspect-ratio: 18/10;
+  width: 60rem;
+  aspect-ratio: 15/10;
   object-fit: contain;
 }
 
@@ -136,8 +139,7 @@ main {
 }
 
 .container-agents {
-  /* height: 45rem;
-    padding: 10px; */
+  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -145,7 +147,7 @@ main {
 
 .content {
   display: flex;
-  width: 54%;
+  width: 46%;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
@@ -183,6 +185,19 @@ main {
   overflow: hidden;
 }
 
+.abilities-agents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 10px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
 .content-card {
   max-width: 100%;
   display: flex;
@@ -216,3 +231,118 @@ main {
 }
 
 /* Fim Agents*/
+
+/* Agents Content Styling */
+.agents-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.agents-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Agent Image */
+.agents_main {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+/* Agent Role */
+.role-agents {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Agent Biography */
+.biography-agents {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e0e0e0;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+/* Abilities Title */
+.abilities-title {
+  font-size: 2rem;
+  color: #4ecdc4;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Abilities Container */
+.abilities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Individual Ability Card */
+.ability-card {
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+   background-color: #4041438d;
+  border: 1px solid #4041438d;
+}
+
+.ability-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(90, 159, 232, 0.4);
+    border-color: #5a9fe8;
+  background: linear-gradient(135deg, #1a2537 0%, #243d52 100%);
+}
+
+
+/* Ability Name */
+.ability-name {
+  font-size: 1.3rem;
+  color: #c3c6ccd7; 
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Ability Description */
+.ability-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cccccc;
+  text-align: justify;
+}
+
+.ability-cost {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+/* Fim Agents Content Styling */
