@@ -49,10 +49,10 @@ function renderHeader() {
                             <div class="point-nav">
                                     <ul>
                                             <li class="itens-navbar">
-                                                    <img src="/assets/img/Radianite_Points.webp" class="icons-vp-rp" alt="Radianite Points currency icon: 1.550">1.550
+                                                    <img src="/assets/img/menu/Radianite_Points.webp" class="icons-vp-rp" alt="Radianite Points currency icon: 1.550">1.550
                                             </li>
                                             <li class="itens-navbar">
-                                                    <img src="/assets/img/Valorant_Points.webp" class="icons-vp-rp" alt="Valorant Points currency icon: 9.999">9.999
+                                                    <img src="/assets/img/menu/Valorant_Points.webp" class="icons-vp-rp" alt="Valorant Points currency icon: 9.999">9.999
                                             </li>
                                     </ul>
                             </div>
@@ -61,14 +61,14 @@ function renderHeader() {
             <div class="navbar-profile">
                     <ul class="nav-bar-vlrt-bar">
                             <li class="itens-bar">
-                                    <img src="/assets/img/RGX_Card_Large.webp" class="card-profile" alt="RGX player card 1">
+                                    <img src="/assets/img/menu/RGX_Card_Large.webp" class="card-profile" alt="RGX player card 1">
                             </li>
                             <li class="itens-bar people">1</li>
                             <li class="itens-bar">
-                                    <img src="/assets/img/RGX_Card_Large.webp" class="card-profile" alt="RGX player card 2">
+                                    <img src="/assets/img/menu/RGX_Card_Large.webp" class="card-profile" alt="RGX player card 2">
                             </li>
                             <li class="itens-bar">
-                                    <img src="/assets/img/RGX_Card_Large.webp" class="card-profile" alt="RGX player card 3">
+                                    <img src="/assets/img/menu/RGX_Card_Large.webp" class="card-profile" alt="RGX player card 3">
                             </li>
                             <li class="itens-bar people">0</li>
                             <li class="itens-bar people">30</li>

@@ -14,20 +14,20 @@ async function renderStore() {
   if (!storeData) return;
 
   const storeContainer = document.querySelector(".cards-arms");
-  // Renderizar apenas os primeiros 5 itens
-  const limitedData = storeData.slice(0, 5);
 
-  const renderRandom = limitedData.sort(() => 0.5 - Math.random());
+  // Embaralhar os dados e pegar apenas os primeiros 5 itens
+  const shuffledData = [...storeData].sort(() => 0.5 - Math.random());
+  const limitedData = shuffledData.slice(0, 5);
 
-  renderRandom.forEach((item) => {
+  limitedData.forEach((item) => {
     const itemHTML = `
         <div class="card">
             <div class="content-card">
                 <h2 class="text-arms-h2">
-                    <img src="/assets/img/Valorant_Points.webp" class="icons-vp-rp" alt="VP" />${item.price}
+                    <img src="/assets/img/menu/Valorant_Points.webp" class="icons-vp-rp" alt="VP" />${item.price}
                     <img src="${item["icon-exclusive"]}" class="icon-exclusive" alt="premiun-icon" />
                 </h2>
-                <img src="${item.image}" class="img0" alt="${item.name}" />
+                <img src="${item.image}" class="img-container" alt="${item.name}" />
                 <div class="text-arms-main">
                     <h1 class="text-arms-h1">${item.name}</h1>
                 </div>

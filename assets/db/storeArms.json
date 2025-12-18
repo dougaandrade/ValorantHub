@@ -63,6 +63,46 @@
       "edition": "Premium",
       "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
       "image": "/assets/img/store/Reaver_Ghost.webp"
+    },
+    {
+      "id": "9",
+      "name": "Oni Phantom",
+      "price": "1,775",
+      "edition": "Premium",
+      "icon-exclusive": "/assets/img/icon-exclusive/Premium-Edition.png",
+      "image": "/assets/img/store/Oni_Phantom.png"
+    },
+    {
+      "id": "10",
+      "name": "RGX 11z Pro Spectre",
+      "price": "1,775",
+      "edition": "Exclusive",
+      "icon-exclusive": "/assets/img/icon-exclusive/Exclusive-Edition.png",
+      "image": "/assets/img/store/RGX_11z_Pro_Spectre.png"
+    },
+    {
+      "id": "11",
+      "name": "Tilde Operator",
+      "price": "1,775",
+      "edition": "Exclusive",
+      "icon-exclusive": "/assets/img/icon-exclusive/Exclusive-Edition.png",
+      "image": "/assets/img/store/Tilde_Operator.png"
+    },
+    {
+      "id": "12",
+      "name": "Classic Cryostasis",
+      "price": "1,775",
+      "edition": "Exclusive",
+      "icon-exclusive": "/assets/img/icon-exclusive/Exclusive-Edition.png",
+      "image": "/assets/img/store/Cryostasis_Classic.png"
+    },
+    {
+      "id": "13",
+      "name": "Soulstrife Melee",
+      "price": "1,775",
+      "edition": "Exclusive",
+      "icon-exclusive": "/assets/img/icon-exclusive/Exclusive-Edition.png",
+      "image": "/assets/img/store/Soulstrife_Scythe.png"
     }
   ]
 }
