@@ -235,27 +235,31 @@ main {
 /* Agents Content Styling */
 .agents-content {
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .agents-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* Main Agent Image */
 .agents_main {
   width: 100%;
-  max-width: 400px;
+  right: 20rem;
+  bottom: 10rem;
+  position: absolute;
+  max-width: 800px;
   height: auto;
   border-radius: 15px;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 
@@ -297,7 +301,7 @@ main {
 /* Abilities Container */
 .abilities-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
