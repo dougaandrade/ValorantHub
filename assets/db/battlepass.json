@@ -1,0 +1,91 @@
+{
+  "battlepass": [
+    {
+      "id": "1",
+      "name": "TIER 1",
+      "arms": [
+        {
+          "id": "8",
+          "name": "Ghost",
+          "image": "/assets/img/battlepass/ammo1.webp"
+        },
+        {
+          "id": "9",
+          "name": "Spectre",
+          "image": "/assets/img/battlepass/ammo2.webp"
+        },
+        {
+          "id": "10",
+          "name": "Judge",
+          "image": "/assets/img/battlepass/ammo3.webp"
+        },
+        {
+          "id": "11",
+          "name": "Vandal",
+          "image": "/assets/img/battlepass/ammo4.webp"
+        },
+        {
+          "id": "12",
+          "name": "Operator",
+          "image": "/assets/img/battlepass/ammo5.webp"
+        },
+        {
+          "id": "13",
+          "name": "Melee",
+          "image": "/assets/img/battlepass/ammo6.webp"
+        },
+        {
+          "id": "14",
+          "name": "Melee",
+          "image": "/assets/img/battlepass/ammo7.webp"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "TIER 2",
+      "arms": [
+        {
+          "id": "1",
+          "name": "Phantom BlastX",
+          "image": "/assets/img/store/BlastX_Phantom.webp"
+        },
+        {
+          "id": "2",
+          "name": "Ghost Magepunk",
+          "image": "/assets/img/store/Magepunk_Ghost.webp"
+        },
+        {
+          "id": "3",
+          "name": "Shorty Oni",
+          "image": "/assets/img/store/Oni_Shorty.webp"
+        },
+        {
+          "id": "4",
+          "name": "Vandal Prime",
+          "image": "/assets/img/store/Prime_Vandal.webp"
+        },
+        {
+          "id": "5",
+          "name": "Bucky Prime 2.0",
+          "image": "/assets/img/store/Prime_2.0_Bucky.webp"
+        },
+        {
+          "id": "6",
+          "name": "Sheriff Reaver",
+          "image": "/assets/img/store/Reaver_Sheriff.webp"
+        },
+        {
+          "id": "7",
+          "name": "Classic Prime",
+          "image": "/assets/img/store/Prime_Classic.webp"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "TIER 3",
+      "arms": []
+    }
+  ]
+}

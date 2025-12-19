@@ -1,6 +1,6 @@
 async function store() {
   try {
-    const response = await fetch("/assets/db/storeArms.json");
+    const response = await fetch("/assets/db/store.json");
     const data = await response.json();
     return data.store || data;
   } catch (error) {
