@@ -1,61 +1,132 @@
-const imagensGuns = [
-  { tier: "TIER 1", guns: "/assets/img/battlepass/ammo1.webp" },
-  { tier: "TIER 2", guns: "/assets/img/battlepass/ammo2.webp" },
-  { tier: "TIER 3", guns: "/assets/img/battlepass/ammo3.webp" },
-  { tier: "TIER 4", guns: "/assets/img/battlepass/ammo4.webp" },
-  { tier: "TIER 5", guns: "/assets/img/battlepass/ammo5.webp" },
-  { tier: "TIER 6", guns: "/assets/img/battlepass/ammo6.webp" },
-  { tier: "TIER 7", guns: "/assets/img/battlepass/ammo7.webp" },
-];
-
-let imagemAtual = imagensGuns;
-
-function exibirImagemAleatoria() {
-  const img_main = document.querySelector(".arms_content");
-  img_main.style.margin = "1rem";
-  img_main.innerHTML = `
-   <img src="${imagemAtual[0].guns}" class="armas_main">
-  </div>`;
+async function fetchBattlepass() {
+  try {
+    const response = await fetch("/assets/db/battlepass.json");
+    const data = await response.json();
+    return data.battlepass || data;
+  } catch (error) {
+    console.error("Erro:", error);
+    return null;
+  }
 }
 
-function exibirCardsHtml() {
-  const cardGuns = document.querySelector(".episode");
-  imagensGuns.forEach((card) => {
-    const cardHTML = `
-    <div class="card">
-        <div class="ep-basic">
-        <img src="${card.guns}" class="icon-guns">
-        <div class="card-span">
-        <span class="span">${card.tier}</span>
-        <span class="span"><ion-icon name="lock-closed" class="icon-close"></ion-icon></span>
-        </div>
-        </div>
-      </div>  
+console.log("Battlepass JS carregado com sucesso.", fetchBattlepass());
+
+async function init() {
+  const battlepass = await fetchBattlepass();
+
+  if (!battlepass) return;
+
+  const cardContainer = document.querySelector(".episode");
+  const radioContainer = document.querySelector(".radio-input");
+
+  if (!cardContainer) {
+    console.error("Container .episode não encontrado");
+    return;
+  }
+
+  function renderRadioButtons() {
+    const selection = radioContainer.querySelector(".selection");
+
+    battlepass.forEach((tier, index) => {
+      const radioHTML = `
+        <label>
+          <input type="radio" id="value-${
+            index + 1
+          }" name="value-radio" value="value-${index + 1}" ${
+        index === 0 ? "checked" : ""
+      } />
+          <span>${tier.name.replace("TIER ", "")}</span>
+        </label>
+      `;
+      selection.insertAdjacentHTML("beforebegin", radioHTML);
+    });
+
+    // Adiciona opção Epilogue
+    const epilogueHTML = `
+      <label>
+        <input type="radio" id="value-ep" name="value-radio" value="value-ep" />
+        <span>Epilogue</span>
+      </label>
     `;
-    cardGuns.insertAdjacentHTML("beforeend", cardHTML);
+    selection.insertAdjacentHTML("beforebegin", epilogueHTML);
+  }
+
+  function renderTier(tierIndex) {
+    cardContainer.innerHTML = "";
+
+    if (!battlepass[tierIndex] || !battlepass[tierIndex].arms) {
+      console.log("Tier não encontrado ou sem armas");
+      return;
+    }
+
+    const tier = battlepass[tierIndex];
+
+    tier.arms.forEach((arm, armIndex) => {
+      const cardHTML = `
+      <div class="card" data-tier="${tierIndex}" data-index="${armIndex}">
+        <div class="content-card">
+          <img src="${arm.armo}" class="icon-guns" alt="${arm.name}">
+          <ion-icon name="lock-closed" class="icon-close"></ion-icon>
+        </div>
+      </div>
+      `;
+      cardContainer.insertAdjacentHTML("beforeend", cardHTML);
+    });
+
+    // Renderiza a primeira arma em destaque
+    if (tier.arms.length > 0) {
+      renderMainArm(tierIndex, 0);
+    }
+  }
+
+  // Renderiza a arma em destaque (na área principal)
+  function renderMainArm(tierIndex, armIndex) {
+    const arm = battlepass[tierIndex].arms[armIndex];
+    const armContainer = document.querySelector(".arms_content");
+
+    if (!armContainer) return;
+
+    armContainer.innerHTML = `
+      <img src="${arm.armo}" alt="${arm.name}" class="armas_main" />
+    `;
+  }
+
+  // Evento de clique nas cartas
+  cardContainer.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (!card) return;
+
+    const tierIndex = parseInt(card.getAttribute("data-tier"));
+    const armIndex = parseInt(card.getAttribute("data-index"));
+
+    renderMainArm(tierIndex, armIndex);
   });
-}
 
-function exibirGuns() {
-  const img_main = document.querySelector(".arms_content");
-  const cards = document.querySelectorAll(".card");
-  cards.forEach((card, index) => {
-    card.addEventListener("click", function () {
-      if (img_main.querySelector("img")) {
-        img_main.querySelector("img").remove();
+  // Renderiza os radio buttons
+
+  renderRadioButtons();
+
+  // Adiciona evento de clique nos radio buttons (após gerá-los)
+  const radioButtons = document.querySelectorAll('input[name="value-radio"]');
+
+  radioButtons.forEach((radio) => {
+    radio.addEventListener("change", (e) => {
+      const value = e.target.value;
+
+      if (value === "value-ep") {
+        renderTier(battlepass.length - 1);
+      } else {
+        const tierNumber = parseInt(value.replace("value-", "")) - 1;
+        renderTier(tierNumber);
       }
-
-      // Cria e exibe a nova imagem selecionada
-      const imgSelecionada = document.createElement("img");
-      imgSelecionada.src = imagensGuns[index].guns;
-      imgSelecionada.className = "armas_main";
-      img_main.appendChild(imgSelecionada);
-
-      imagemAtual = index;
     });
   });
-}
 
-exibirCardsHtml();
-exibirGuns();
-exibirImagemAleatoria();
+  // Renderiza o primeiro tier por padrão
+  renderTier(0);
+
+  // Marca o primeiro radio como selecionado
+  const firstRadio = document.querySelector("#value-1");
+  if (firstRadio) firstRadio.checked = true;
+}
+document.addEventListener("DOMContentLoaded", init);

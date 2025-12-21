@@ -16,10 +16,11 @@ function renderMainAgent(agent) {
   const mainContainer = document.querySelector(".agents-content");
 
   mainContainer.innerHTML = `
+    <div class="container">
   <div class="agents-container">
   <span class="name-agents">${agent.name}</span>
-  <p class="biography-agents">${agent.biography}</p>
   <p class="role-agents">${agent.role}</p>
+  <p class="biography-agents">${agent.biography}</p>
   <div class="abilities-container">
   ${agent.abilities
     .map(
@@ -38,6 +39,7 @@ function renderMainAgent(agent) {
     </div>
     </div>
     <img src="${agent.image}" alt="${agent.name}" class="agents_main" />
+    </div>
   `;
 }
 

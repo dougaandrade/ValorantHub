@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +7,16 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 body {
-  background: url("/assets/img/background/Battle\ Pass\ Glitches.gif") no-repeat center;
+  background: url("/assets/img/background/Battle\ Pass\ Glitches.gif") no-repeat center fixed;
   background-blend-mode: color;
   background-color: rgba(0, 0, 0, 0.187);
   height: 100%;
   max-width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-     font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 ion-icon {
@@ -29,13 +27,6 @@ main {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-}
-
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* Buy Card */
@@ -58,7 +49,7 @@ main {
   justify-content: center;
   width: 14rem;
   background: #74b6aabc;
-  border: 2px solid #ffff;
+  border: 2px solid #fff;
 }
 
 .text-card-buy-h1 {
@@ -78,7 +69,7 @@ main {
   font-size: 0.8rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
-  padding: 2px 0 2px 0;
+  padding: 2px 0;
   font-weight: 500;
 }
 
@@ -100,28 +91,20 @@ main {
 .text-agents {
   width: 19%;
   position: absolute;
-  left: 58.4%;
-  right: 0;
-  top: 0;
-  bottom: 10%;
+  inset: 0 0 10% 58.4%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: INter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   color: #fff;
 }
 
-.agents_main {
-  width: 60rem;
-  aspect-ratio: 15/10;
-  object-fit: contain;
-}
-
+.container,
 .agents-content {
   width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -139,7 +122,6 @@ main {
 }
 
 .container-agents {
-  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -179,7 +161,7 @@ main {
   height: auto;
   background: #ffffff4d;
   transition: all 0.3s;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -218,7 +200,7 @@ main {
   align-items: center;
   justify-content: flex-end;
   width: 30px;
-  padding: 0px 40px 5px 0px;
+  padding: 0 40px 5px 0;
   position: absolute;
   color: #f2f687;
 }
@@ -234,32 +216,26 @@ main {
 
 /* Agents Content Styling */
 .agents-content {
-  padding: 2rem;
-  max-width: 600px;
+  padding: 1rem;
   margin: 0 auto;
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  color: #fff;
 }
 
 .agents-container {
+  width: 30rem;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
 }
 
 /* Main Agent Image */
 .agents_main {
-  width: 100%;
-  right: 20rem;
-  bottom: 10rem;
-  position: absolute;
-  max-width: 800px;
-  height: auto;
-  border-radius: 15px;
-  flex-shrink: 0;
+  width: 30rem;
+  max-width: 900px;
+  height: 50rem;
+  aspect-ratio: 5/10;
+  object-fit: contain;
 }
 
 
@@ -269,7 +245,7 @@ main {
 .role-agents {
   font-size: 1.5rem;
   color: #ff6b6b;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -279,20 +255,21 @@ main {
 .biography-agents {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 2.5rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 1rem;
+  max-width: 900px;
   color: #e0e0e0;
   text-align: justify;
-  padding: 0 1rem;
+    border: 1px solid #ffffff26;
+    border-radius: 15px;
+    padding: 0.9rem;
+    backdrop-filter: blur(5px);
+    background-color: #4041433f;
 }
 
 /* Abilities Title */
 .abilities-title {
   font-size: 2rem;
   color: #4ecdc4;
-  margin-bottom: 2rem;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
@@ -300,20 +277,24 @@ main {
 
 /* Abilities Container */
 .abilities-container {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Individual Ability Card */
 .ability-card {
+  width: 15rem;
+  height: 12rem;
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 0.9rem;
   text-align: center;
   transition: all 0.3s ease;
   backdrop-filter: blur(5px);
-   background-color: #4041438d;
+  background-color: #4041438d;
   border: 1px solid #4041438d;
 }
 
@@ -329,7 +310,6 @@ main {
 .ability-name {
   font-size: 1.3rem;
   color: #c3c6ccd7; 
-  margin-bottom: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
 }

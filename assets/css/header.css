@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -181,19 +186,18 @@ ion-icon {
   flex-direction: row;
   color: white;
   cursor: pointer;
+  background-color: #303b46;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
 }
 
 .nav-bar-vlrt-bar {
   width: 100%;
-  height: 100%;
   padding: 3px;
   gap: 3px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #303b46;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
 }
 
 .itens-bar {
